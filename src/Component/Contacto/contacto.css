@@ -1,0 +1,73 @@
+form {
+  width: 550px;
+  margin: auto;
+  border: 1px solid rgb(195, 194, 194);
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  margin-bottom:35px ;
+  border-radius: 20px;
+}
+
+.btn:hover {
+  background-color: #80aff7;
+  color: rgb(8, 8, 8);
+}
+
+h2 {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin: 0;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+label {
+  color: #070707;
+  font-size: 18px;
+  margin-bottom: 5px;
+  display: block; /* Asegura que las etiquetas estén en una nueva línea */
+
+  text-align: left;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 17px;
+}
+
+textarea {
+  min-height: 100px;
+  max-height: 200px;
+  min-width: 100%;
+  max-width: 100%;
+}
+
+#boton {
+  background: #4276fc;
+  width: 150px;
+  color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+#boton:hover {
+  background-color: #80aff7;
+  color: black;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+}
+
+@media (max-width: 480px) {
+  form {
+    width: 100%;
+  }
+}

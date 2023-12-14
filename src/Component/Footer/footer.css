@@ -1,0 +1,143 @@
+/* .imagen-gov{
+    display: flex;
+    flex-direction: column;
+    
+    border: 1px solid red;
+    height: 350px;
+    margin-top: 35px;
+}
+.redes{
+    margin-top: 15px;
+    display: flex;
+} */
+/* footer.css */
+
+.bg-primary {
+  background-color: #007bff;
+  padding: 20px;
+}
+
+.footer-container {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap; /* Permitir que los elementos se envuelvan en pantallas más pequeñas */
+  justify-content: space-around;
+}
+
+.imagen-gov {
+  margin-top: 15px;
+  text-align: center; /* Alinea al centro en pantallas pequeñas */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra los elementos en el eje transversal */
+
+  padding-right: 100px; /* Elimina el relleno a la derecha en pantallas pequeñas */
+}
+
+#gov {
+  margin-top: 15px;
+}
+
+#colombia {
+  margin-left: 15px;
+}
+
+.section-datos {
+  padding-right: 0; /* Elimina el relleno a la derecha en pantallas pequeñas */
+  color: rgb(33, 32, 32);
+  text-align: left; /* Alinea al centro en pantallas pequeñas */
+}
+
+.section-datos p {
+  font-size: 18px;
+  color: white;
+}
+.section-datos h3 {
+  font-size: 18px;
+  color: rgb(48, 47, 47);
+}
+.section-datos h2 {
+  
+  color: rgb(185, 185, 185);
+}
+
+.redes {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap; /* Permitir que los elementos se envuelvan en pantallas más pequeñas */
+  justify-content: center; /* Alinea al centro en pantallas pequeñas */
+  gap: 35px;
+}
+.red-social h4 {
+  margin-top: 10px;
+  color: rgb(203, 203, 203);
+}
+
+.red-social {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  transition: transform 1s ease;
+  align-items: center; /* Centra horizontalmente */
+  text-align: center;
+}
+
+@keyframes zoomInAndOut {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.red-social:hover {
+  animation: zoomInAndOut 1s ease;
+}
+
+.red-social img {
+  width: 45px;
+}
+
+.contacto {
+  text-align: center; /* Alinea al centro en pantallas pequeñas */
+}
+.contacto h2 {
+  color: #aeafb0; /* Alinea al centro en pantallas pequeñas */
+}
+.contacto-ctc {
+  color: rgb(41, 36, 36);
+  text-align: left; /* Alinea al centro en pantallas pequeñas */
+}
+
+.contacto-ctc h3 {
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.contacto-ctc a {
+  color: #ebeff3;
+  font-size: 20px;
+}
+
+/* Agrega otros estilos según tus necesidades */
+@media (min-width: 1000px) and (max-width: 1500px) {
+  .imagen-gov,
+  .section-datos,
+  .contacto {
+    flex: 1; /* Permitir que las secciones ocupen un tercio del contenedor */
+    max-width: calc(33.333% - 20px); /* Establecer el ancho máximo de cada sección con un pequeño margen entre ellas */
+  }
+  
+  .red-social{
+    width: 10%;
+   
+  }
+  .red-social h4{
+    font-size: 15px;
+  }
+}

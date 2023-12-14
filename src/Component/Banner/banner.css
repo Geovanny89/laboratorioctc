@@ -1,0 +1,18 @@
+.banner-container {
+  margin-top: 15px;
+  width: 98%; /* Establece el ancho del contenedor principal */
+  height: 550px;
+}
+
+#title{
+  margin-bottom: 25px;
+}
+
+.slider-image {
+    width: 90%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+    height: 500px; /* Ajusta la altura automáticamente para mantener la proporción */
+    display: block; /* Evita los márgenes blancos en la parte inferior de las imágenes */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    border-radius: 8px;
+   
+  }

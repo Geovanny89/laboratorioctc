@@ -1,0 +1,18 @@
+.whatsapp-icon {
+    position: fixed;
+    width: 50px;
+    bottom: 10%; /* Ajusta la distancia desde la parte inferior según tus necesidades */
+    right: 20px; /* Ajusta la distancia desde la derecha según tus necesidades */
+    background-color: #25d366; /* Color de fondo de WhatsApp */
+    color: #fff; /* Color del icono */
+    padding: 10px;
+    border-radius: 25px 5px 25px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1000; /* Asegura que el icono esté por encima del resto del contenido */
+  }
+  
+  /* Añade un estilo de transición suave para mejorar la apariencia */
+  .whatsapp-icon:hover {
+    background-color: #128c7e; /* Cambia el color de fondo al pasar el ratón sobre el icono */
+  }
