@@ -54,7 +54,7 @@ export default function Footer() {
               <h4>Facebook</h4>
             </div>
             <div className='red-social'>
-              <a href="" target="_blank" rel="noopener noreferrer"><img src={insta} alt='Img not Found' /></a>
+              <a href="https://www.instagram.com/ctc_cucuta" target="_blank" rel="noopener noreferrer"><img src={insta} alt='Img not Found' /></a>
               <h4>Instagram</h4>
             </div>
             <div className='red-social'>
