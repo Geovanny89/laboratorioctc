@@ -70,7 +70,7 @@
 }
 .red-social h4 {
   margin-top: 10px;
-  color: rgb(0, 0, 0);
+  color: rgb(203, 203, 203);
 }
 
 .red-social {
@@ -81,7 +81,7 @@
   transition: transform 1s ease;
   align-items: center; /* Centra horizontalmente */
   text-align: center;
-  margin-right: 15px;
+  
 }
 
 @keyframes zoomInAndOut {
@@ -149,6 +149,5 @@
 
   .red-social h4 {
     font-size: 13px; /* Ajusta el tamaño de la fuente según tus necesidades */
-    color: rgb(6, 6, 6);
   }
 }
