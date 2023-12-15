@@ -1,17 +1,32 @@
-
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faUsers,faEnvelope,faFile} from '@fortawesome/free-solid-svg-icons';
+import { faHome, faUsers, faEnvelope, faFile } from '@fortawesome/free-solid-svg-icons';
 import logo from '../../assets/ctc-logo.png';
-import portafolio from'../../public/PORTAFOLIO.pdf'
+import portafolio from '../../public/PORTAFOLIO.pdf';
 import './navbar.css';
 
 export default function NavbarComponent() {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <Navbar expand='lg' >
+    <Navbar expand='lg' className={scrollY > 0 ? 'fixed-nav' : ''}>
       <Container>
-        <a href="https://www.ctc.edu.co/" target="_blank" rel="noopener noreferrer"><img src={logo} alt="Img Not Found" width="150px" className="mb-2" /></a>
+        <a href="https://www.ctc.edu.co/" target="_blank" rel="noopener noreferrer">
+          <img src={logo} alt="Img Not Found" width="150px" className="mb-2" />
+        </a>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll" className="mx-2">
           <Nav

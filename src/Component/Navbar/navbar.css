@@ -1,6 +1,28 @@
 
+.fixed-nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background: rgb(199,103,103);
+  background: rgb(199,103,103);
+  background: linear-gradient(90deg, rgba(199,103,103,0.39539565826330536) 0%, rgba(0,127,242,0.7791491596638656) 0%);
+}
+.fixed-nav a {
+  color: rgb(8, 8, 8);
+  transition: transform 0.3s ease-in-out; /* Agrega una transición de 0.3 segundos al atributo transform */
+}
+
+.fixed-nav a:hover {
+  transform: scale(1.2); /* Aplica un aumento del 10% en el tamaño al pasar el mouse */
+}
+
 
 .nav-link-custom {
     font-size: 20px; 
-    
+    transition: transform 0.3s ease-in-out;
+  }
+  .nav-link-custom:hover{
+    transform: scale(1.3);
   }
