@@ -9,7 +9,7 @@ import './navbar.css';
 
 export default function NavbarComponent() {
   return (
-    <Navbar collapseOnSelect >
+    <Navbar expand='lg' >
       <Container>
         <a href="https://www.ctc.edu.co/" target="_blank" rel="noopener noreferrer"><img src={logo} alt="Img Not Found" width="150px" className="mb-2" /></a>
         <Navbar.Toggle aria-controls="navbarScroll" />
